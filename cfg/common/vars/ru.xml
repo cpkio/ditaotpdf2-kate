@@ -78,14 +78,14 @@ See the accompanying LICENSE file for applicable license.
   <variable id="On the page"><!--TODO: on page <param ref-name="pagenum"/>--></variable>
   <variable id="Page"><!--TODO: page <param ref-name="pagenum"/>--></variable>
   <variable id="This link"><!--TODO:this link--></variable>
-  <variable id="note Note Image Path"></variable>
+  <variable id="note Note Image Path">Customization/OpenTopic/common/artwork/bookmark-outline.svg</variable>
   <variable id="notice Note Image Path"></variable>
-  <variable id="attention Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
-  <variable id="caution Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
-  <variable id="danger Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
-  <variable id="warning Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
+  <variable id="attention Note Image Path">Customization/OpenTopic/common/artwork/alert-circle-outline.svg</variable>
+  <variable id="caution Note Image Path"></variable>
+  <variable id="danger Note Image Path"></variable>
+  <variable id="warning Note Image Path">Customization/OpenTopic/common/artwork/alert.svg</variable>
   <variable id="fastpath Note Image Path"></variable>
-  <variable id="important Note Image Path"></variable>
+  <variable id="important Note Image Path">Customization/OpenTopic/common/artwork/exclamation-thick.svg</variable>
   <variable id="remember Note Image Path"></variable>
   <variable id="restriction Note Image Path"></variable>
   <variable id="tip Note Image Path"></variable>
