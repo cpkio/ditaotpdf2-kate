@@ -31,7 +31,7 @@
   <!--uri name="cfg:fo/i18n/nl.xml" uri="fo/i18n/nl.xml"/-->
   <!--uri name="cfg:fo/i18n/ro_RO.xml" uri="fo/i18n/ro.xml"/-->
   <!--uri name="cfg:fo/i18n/ro.xml" uri="fo/i18n/ro.xml"/-->
-  <!--uri name="cfg:fo/i18n/ru_RU.xml" uri="fo/i18n/ru.xml"/-->
+  <uri name="cfg:fo/i18n/ru_RU.xml" uri="fo/i18n/ru.xml"/>
   <uri name="cfg:fo/i18n/ru.xml" uri="fo/i18n/ru.xml"/>
   <!--uri name="cfg:fo/i18n/sv_SE.xml" uri="fo/i18n/sv.xml"/-->
   <!--uri name="cfg:fo/i18n/sv.xml" uri="fo/i18n/sv.xml"/-->

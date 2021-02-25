@@ -3,6 +3,8 @@
     xmlns:fo="http://www.w3.org/1999/XSL/Format"
     version="2.0">
 
+    <xsl:import href="topic-attr.xsl"/>
+
     <xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
         <xsl:attribute name="font-family">sans-serif</xsl:attribute>
     </xsl:attribute-set>
