@@ -83,6 +83,7 @@ See the accompanying LICENSE file for applicable license.
   <variable id="attention Note Image Path">Customization/OpenTopic/common/artwork/alert-circle-outline.svg</variable>
   <variable id="caution Note Image Path"></variable>
   <variable id="danger Note Image Path"></variable>
+  <variable id="Warning">Предупреждение</variable>
   <variable id="warning Note Image Path">Customization/OpenTopic/common/artwork/alert.svg</variable>
   <variable id="fastpath Note Image Path"></variable>
   <variable id="important Note Image Path">Customization/OpenTopic/common/artwork/exclamation-thick.svg</variable>
