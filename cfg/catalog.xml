@@ -5,7 +5,7 @@
   <uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/>
   
   <!-- Custom XSL code entry.-->
-  <!--uri name="cfg:fo/xsl/custom.xsl" uri="fo/xsl/custom.xsl"/-->
+  <uri name="cfg:fo/xsl/custom.xsl" uri="fo/xsl/custom.xsl"/>
 
   <!-- FontMapper configuration override entry.-->
   <uri name="cfg:fo/font-mappings.xml" uri="fo/font-mappings.xml"/>
