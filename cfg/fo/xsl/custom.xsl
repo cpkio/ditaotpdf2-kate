@@ -4,5 +4,6 @@
     version="2.0">
 
     <xsl:import href="topic.xsl"/>
+    <xsl:import href="tables.xsl"/>
 
 </xsl:stylesheet>

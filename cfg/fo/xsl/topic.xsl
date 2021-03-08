@@ -12,6 +12,8 @@
     exclude-result-prefixes="dita-ot ot-placeholder opentopic opentopic-index opentopic-func dita2xslfo xs"
     version="2.0">
 
+    <!-- Admonitions (notes, tips, warnings styling -->
+
     <xsl:template match="*" mode="placeNoteContent">
         <fo:block xsl:use-attribute-sets="note">
             <xsl:call-template name="commonattributes"/>
