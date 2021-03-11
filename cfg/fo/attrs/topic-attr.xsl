@@ -37,24 +37,79 @@ See the accompanying LICENSE file for applicable license.
     version="2.0">
 
     <xsl:attribute-set name="note" use-attribute-sets="common.block">
+        <xsl:attribute name="padding-top">6pt</xsl:attribute>
+        <xsl:attribute name="padding-bottom">6pt</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note__table" use-attribute-sets="common.block">
+        <!-- <xsl:attribute name="width">416pt</xsl:attribute> -->
+        <xsl:attribute name="border-top">2pt solid</xsl:attribute>
+        <xsl:attribute name="border-bottom">2pt solid</xsl:attribute>
     </xsl:attribute-set>
 
+    <!-- Колонка ВНЕШНЕЙ таблицы с иконкой -->
     <xsl:attribute-set name="note__image__column">
         <xsl:attribute name="column-number">1</xsl:attribute>
-        <xsl:attribute name="column-width">32pt</xsl:attribute>
     </xsl:attribute-set>
 
+    <!-- Колонка ВНЕШНЕЙ таблицы в которую вложена вторичная таблица -->
     <xsl:attribute-set name="note__text__column">
       <xsl:attribute name="column-number">2</xsl:attribute>
     </xsl:attribute-set>
 
+    <!-- Ячейка ВНЕШНЕЙ таблицы в которую вложена внутренняя таблица -->
+    <xsl:attribute-set name="note__text__entry">
+        <xsl:attribute name="padding-top">2pt</xsl:attribute>
+        <xsl:attribute name="display-align">center</xsl:attribute>
+        <xsl:attribute name="alignment-adjust">middle</xsl:attribute>
+        <xsl:attribute name="vertical-align">middle</xsl:attribute>
+    </xsl:attribute-set>
+
+    <!-- Ячейка ВНЕШНЕЙ таблицы с иконкой -->
     <xsl:attribute-set name="note__image__entry">
         <xsl:attribute name="padding-end">5pt</xsl:attribute>
         <xsl:attribute name="start-indent">0pt</xsl:attribute>
+        <xsl:attribute name="width">24pt</xsl:attribute>
+        <xsl:attribute name="display-align">center</xsl:attribute>
+        <xsl:attribute name="alignment-adjust">middle</xsl:attribute>
+        <xsl:attribute name="vertical-align">middle</xsl:attribute>
+    </xsl:attribute-set>
+
+    <!-- Настройки для иконки предупреждений -->
+    <xsl:attribute-set name="note__image">
+        <xsl:attribute name="width">100%</xsl:attribute>
+        <xsl:attribute name="content-width">scale-up-to-fit</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="note__table__inner">
+        <xsl:attribute name="margin-top">6pt</xsl:attribute>
+        <xsl:attribute name="margin-bottom">6pt</xsl:attribute>
+        <xsl:attribute name="padding-top">6pt</xsl:attribute>
+        <xsl:attribute name="padding-bottom">6pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <!-- Колонка ВНУТРЕННЕЙ таблицы с текстовой меткой предупреждения -->
+    <xsl:attribute-set name="note__inner__admonition__column">
+        <xsl:attribute name="column-number">1</xsl:attribute>
+        <xsl:attribute name="column-width">112pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <!-- Колонка ВНУТРЕННЕЙ таблицы с самим текстом -->
+    <xsl:attribute-set name="note__inner__text__column">
+        <xsl:attribute name="column-number">2</xsl:attribute>
+    </xsl:attribute-set>
+
+    <!-- Ячейка ВНУТРЕННЕЙ таблицы с текстовой меткой предупреждения -->
+    <xsl:attribute-set name="note__inner__admonition__entry">
+        <xsl:attribute name="padding-right">0.5em</xsl:attribute>
         <xsl:attribute name="text-align">right</xsl:attribute>
+        <xsl:attribute name="display-align">center</xsl:attribute>
+        <xsl:attribute name="alignment-adjust">middle</xsl:attribute>
+        <xsl:attribute name="vertical-align">middle</xsl:attribute>
+    </xsl:attribute-set>
+
+    <!-- Ячейка ВНУТРЕННЕЙ таблицы с собственно текстом -->
+    <xsl:attribute-set name="note__inner__text__entry">
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note__label__note">
