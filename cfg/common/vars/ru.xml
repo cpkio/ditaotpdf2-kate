@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  
-This file is part of the DITA Open Toolkit project.
 
-Copyright 2011 Jarno Elovirta
-
-See the accompanying LICENSE file for applicable license.
--->
 <vars xmlns="http://www.idiominc.com/opentopic/vars">
   <variable id="Product Name"/>
   <variable id="Body odd footer"/>
@@ -63,7 +57,7 @@ See the accompanying LICENSE file for applicable license.
   <variable id="Figure.title">Рисунок <param ref-name="number"/>. <param ref-name="title"/></variable>
   <variable id="Figure Number">Рисунок <param ref-name="number"/></variable>
   <variable id="Table.title">Таблица <param ref-name="number"/>. <param ref-name="title"/></variable>
-  <variable id="Table Number">Таблица <param ref-name="number"/></variable>
+  <variable id="Table Number">Таблицe <param ref-name="number"/></variable>
   <variable id="Related Links"><!--TODO:Related Links--></variable>
   <variable id="Cross-Reference"><!--TODO:Cross-Reference to:--></variable>
   <variable id="Content-Reference"><!--TODO:Content-Reference to:--></variable>
@@ -115,6 +109,7 @@ See the accompanying LICENSE file for applicable license.
   <variable id="Task Postreq"></variable>
   <variable id="Step Number"><param ref-name="number"/>. </variable>
   <variable id="Step Format">1</variable>
+  <variable id="Step Example">Пример: </variable>
   <variable id="Substep Number"><param ref-name="number"/>) </variable>
   <variable id="Substep Format">а</variable>
   <variable id="Glossary odd footer"/>

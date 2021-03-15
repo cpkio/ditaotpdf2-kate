@@ -4,6 +4,10 @@
     xmlns:fo="http://www.w3.org/1999/XSL/Format"
     version="2.0">
 
+    <xsl:attribute-set name="stepxmp.title">
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
+    </xsl:attribute-set>
+
     <xsl:attribute-set name="choicetable" use-attribute-sets="base-font">
         <xsl:attribute name="width">100%</xsl:attribute>
         <xsl:attribute name="space-after">10pt</xsl:attribute>

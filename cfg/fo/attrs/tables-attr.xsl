@@ -2,11 +2,27 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="2.0">
 
+  <xsl:attribute-set name="table.title" use-attribute-sets="base-font common.title">
+    <xsl:attribute name="space-before">12pt</xsl:attribute>
+    <xsl:attribute name="space-after">0pt</xsl:attribute>
+    <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="table" use-attribute-sets="base-font">
+    <!--It is a table container -->
+    <xsl:attribute name="space-before">8pt</xsl:attribute>
+    <xsl:attribute name="space-after">12pt</xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="thead.row">
+        <xsl:attribute name="border-bottom">2pt solid black</xsl:attribute>
+  </xsl:attribute-set>
+
   <xsl:attribute-set name="simpletable" use-attribute-sets="base-font">
     <!--It is a table container -->
     <xsl:attribute name="width">100%</xsl:attribute>
     <xsl:attribute name="space-before">8pt</xsl:attribute>
-    <xsl:attribute name="space-after">10pt</xsl:attribute>
+    <xsl:attribute name="space-after">12pt</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="simpletable__body">
