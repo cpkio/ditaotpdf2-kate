@@ -11,13 +11,11 @@
     <xsl:template match="*[contains(@class, ' task/stepxmp ')]">
       <fo:block xsl:use-attribute-sets="stepxmp">
         <xsl:call-template name="commonattributes"/>
-        <xsl:if test="$GENERATE-TASK-LABELS='YES'">
           <fo:inline xsl:use-attribute-sets="stepxmp.title">
           <xsl:call-template name="getVariable">
             <xsl:with-param name="id" select="'Step Example'"/>
           </xsl:call-template>
           </fo:inline>
-        </xsl:if>
         <xsl:apply-templates/>
       </fo:block>
     </xsl:template>

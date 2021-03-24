@@ -101,4 +101,8 @@ See the accompanying LICENSE file for applicable license.
         <xsl:attribute name="baseline-shift">-15%</xsl:attribute>
     </xsl:attribute-set>
 
+    <xsl:attribute-set name="image__block">
+        <xsl:attribute name="margin-top">6pt</xsl:attribute>
+    </xsl:attribute-set>
+
 </xsl:stylesheet>
