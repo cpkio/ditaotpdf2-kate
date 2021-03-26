@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+<plugin id="com.kate.pdf">
+  <require plugin="org.dita.pdf2"/>
+  <transtype name="pdfkate" extends="pdf" desc="PDF restyling for KatyushaIT company"/>
+  <feature extension="dita.transtype.print" value="pdfkate"/>
+  <feature extension="ant.import" file="integrator.xml"/>
+</plugin>

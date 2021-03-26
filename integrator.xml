@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project>
+  <target name="dita2pdfkate" depends="dita2pdfkate.init, dita2pdf2" />
+  <target name="dita2pdfkate.init">
+    <property name="customization.dir" location="${dita.plugin.com.kate.pdf.dir}/cfg" />
+  </target>
+</project>
