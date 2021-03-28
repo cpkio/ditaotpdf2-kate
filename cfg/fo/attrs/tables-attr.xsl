@@ -15,7 +15,7 @@
   </xsl:attribute-set>
 
   <xsl:attribute-set name="thead.row">
-        <xsl:attribute name="border-bottom">2pt solid black</xsl:attribute>
+    <xsl:attribute name="border-bottom">3pt double black</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="simpletable" use-attribute-sets="base-font">
@@ -29,7 +29,7 @@
   </xsl:attribute-set>
 
   <xsl:attribute-set name="sthead">
-        <xsl:attribute name="border-bottom">2pt solid black</xsl:attribute>
+    <xsl:attribute name="border-bottom">3pt double black</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="sthead__row">

@@ -22,7 +22,7 @@
     <xsl:attribute-set name="choicetable__body"></xsl:attribute-set>
 
     <xsl:attribute-set name="chhead">
-        <xsl:attribute name="border-bottom">2pt solid black</xsl:attribute>
+        <xsl:attribute name="border-bottom">3pt double black</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="chhead__row"></xsl:attribute-set>

@@ -99,7 +99,8 @@ See the accompanying LICENSE file for applicable license.
 
     <xsl:attribute-set name="image__inline">
         <xsl:attribute name="baseline-shift">-15%</xsl:attribute>
-        <xsl:attribute name="padding-right">4pt</xsl:attribute>
+        <xsl:attribute name="padding-left">2pt</xsl:attribute>
+        <xsl:attribute name="padding-right">3pt</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="image__block">
