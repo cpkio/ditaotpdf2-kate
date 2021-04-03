@@ -28,6 +28,8 @@
 
     <xsl:attribute-set name="__frontmatter__booklibrary">
         <xsl:attribute name="text-transform">uppercase</xsl:attribute>
+        <xsl:attribute name="border-bottom">2pt solid black</xsl:attribute>
+        <xsl:attribute name="margin-bottom">1em</xsl:attribute>
     </xsl:attribute-set>
 
   <!-- <xsl:attribute-set name="back-cover"> -->

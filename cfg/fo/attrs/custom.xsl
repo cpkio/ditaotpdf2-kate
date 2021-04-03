@@ -10,6 +10,7 @@
     <xsl:import href="task-elements-attr.xsl"/>
     <xsl:import href="tables-attr.xsl"/>
     <xsl:import href="index-attr.xsl"/>
+    <xsl:import href="lists-attr.xsl"/>
 
     <xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
         <xsl:attribute name="font-family">sans-serif</xsl:attribute>

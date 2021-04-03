@@ -31,13 +31,15 @@
     <variable id="Ordered List Format 2">a</variable>
     <variable id="Ordered List Format 3">1</variable>
     <variable id="Ordered List Format 4">a</variable>
+
   <variable id="Unordered List bullet">•</variable>
-    <variable id="Unordered List bullet 1">•</variable>
-    <variable id="Unordered List bullet 2">•</variable>
-    <variable id="Unordered List bullet 3">•</variable>
-    <variable id="Unordered List bullet 4">•</variable>
+  <variable id="Unordered List bullet 1">‣</variable>
+  <variable id="Unordered List bullet 2">⁃</variable>
+  <variable id="Unordered List bullet 3">•</variable>
+  <variable id="Unordered List bullet 4">•</variable>
+
   <variable id="Table of Contents">Содержание</variable>
-  
+
   <variable id="Index">Указатель</variable>
   <variable id="Index Continued String">продолжение</variable>
   <variable id="Index See String">, см. </variable>
@@ -51,7 +53,7 @@
   <variable id="Notices title"><!--TODO:Notice--></variable>
   <variable id="Mini Toc"><!--TODO:Topics: --></variable>
   <variable id="#note-separator">: </variable>
-  
+
   <variable id="Notice"><!--TODO:Notice--></variable>
 
   <variable id="Figure.title">Рисунок <param ref-name="number"/>. <param ref-name="title"/></variable>
@@ -94,7 +96,7 @@
   <variable id="Child topics"><!--TODO:Child Topics--></variable>
 
   <variable id="Related references">Ссылки, связанные с данной</variable>
-  
+
   <!-- Deprecated since 2.3 -->
   <variable id="Index multiple entries separator">, </variable>
   <variable id="Optional Step">Необязательно:</variable>
