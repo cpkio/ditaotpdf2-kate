@@ -5,8 +5,9 @@
     version="2.0">
 
     <xsl:attribute-set name="stepsection">
-        <xsl:attribute name="space-before">12pt</xsl:attribute>
-        <xsl:attribute name="border-bottom">1pt solid black</xsl:attribute>
+        <xsl:attribute name="space-before">6pt</xsl:attribute>
+        <xsl:attribute name="font-size">smaller</xsl:attribute>
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="keep-with-next.within-page">always</xsl:attribute>
     </xsl:attribute-set>
 
