@@ -32,7 +32,7 @@
     <variable id="Ordered List Format 3">1</variable>
     <variable id="Ordered List Format 4">a</variable>
 
-  <variable id="Unordered List bullet">•</variable>
+  <variable id="Unordered List bullet">—</variable>
   <variable id="Unordered List bullet 1">‣</variable>
   <variable id="Unordered List bullet 2">⁃</variable>
   <variable id="Unordered List bullet 3">•</variable>
@@ -51,7 +51,7 @@
   <variable id="Table of Contents Notices"/>
   <variable id="Preface title">Предисловие</variable>
   <variable id="Notices title"><!--TODO:Notice--></variable>
-  <variable id="Mini Toc"><!--TODO:Topics: --></variable>
+  <variable id="Mini Toc">В этой главе:</variable>
   <variable id="#note-separator">: </variable>
 
   <variable id="Notice"><!--TODO:Notice--></variable>
@@ -96,6 +96,7 @@
   <variable id="Child topics"><!--TODO:Child Topics--></variable>
 
   <variable id="Related references">Ссылки, связанные с данной</variable>
+  <variable id="Related information">Прочтите дополнительно</variable>
 
   <!-- Deprecated since 2.3 -->
   <variable id="Index multiple entries separator">, </variable>
