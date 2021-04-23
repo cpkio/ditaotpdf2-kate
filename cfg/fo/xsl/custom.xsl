@@ -7,5 +7,6 @@
     <xsl:import href="tables.xsl"/>
     <xsl:import href="index.xsl"/>
     <xsl:import href="task-elements.xsl"/>
+    <xsl:import href="links.xsl"/>
 
 </xsl:stylesheet>

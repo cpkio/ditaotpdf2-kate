@@ -98,6 +98,8 @@
   <variable id="Related references">Ссылки, связанные с данной</variable>
   <variable id="Related information">Прочтите дополнительно</variable>
 
+  <variable id="related Block Image Path">Customization/OpenTopic/common/artwork/link-variant.svg</variable>
+
   <!-- Deprecated since 2.3 -->
   <variable id="Index multiple entries separator">, </variable>
   <variable id="Optional Step">Необязательно:</variable>
