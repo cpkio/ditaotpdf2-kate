@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="22"
+   height="17"
+   viewBox="0 0 22 17"
+   id="svg2047"
+   sodipodi:docname="book-open-variant.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata2053">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2051" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview2049"
+     showgrid="false"
+     inkscape:zoom="17.708333"
+     inkscape:cx="4.3595864"
+     inkscape:cy="10.419621"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2047" />
+  <path
+     d="m 16.5,9.83 c 0.79,0 1.63,0.08 2.5,0.24 v 1.5 c -0.62,-0.16 -1.46,-0.24 -2.5,-0.24 -1.9,0 -3.39,0.33 -4.5,0.99 v -1.69 c 1.17,-0.53 2.67,-0.8 4.5,-0.8 M 12,7.96 c 1.29,-0.53 2.79,-0.79 4.5,-0.79 0.79,0 1.63,0.07 2.5,0.23 V 8.9 C 18.38,8.74 17.54,8.66 16.5,8.66 14.6,8.66 13.11,9 12,9.65 M 16.5,6 C 14.6,6 13.11,6.32 12,7 V 5.34 c 1.23,-0.56 2.73,-0.84 4.5,-0.84 0.79,0 1.63,0.08 2.5,0.23 V 6.28 C 18.26,6.09 17.41,6 16.5,6 M 20,14 V 2.5 C 18.96,2.17 17.79,2 16.5,2 14.45,2 12.62,2.5 11,3.5 V 15 c 1.62,-1 3.45,-1.5 5.5,-1.5 1.19,0 2.36,0.16 3.5,0.5 M 16.5,0 c 2.35,0 4.19,0.5 5.5,1.5 v 14.56 c 0,0.12 -0.05,0.24 -0.16,0.35 -0.11,0.09 -0.23,0.17 -0.34,0.17 -0.11,0 -0.19,-0.02 -0.25,-0.05 C 19.97,15.84 18.38,15.5 16.5,15.5 14.45,15.5 12.62,16 11,17 9.66,16 7.83,15.5 5.5,15.5 3.84,15.5 2.25,15.86 0.75,16.57 0.72,16.58 0.68,16.58 0.63,16.6 0.59,16.61 0.55,16.62 0.5,16.62 0.39,16.62 0.27,16.58 0.16,16.5 0.05,16.39 0,16.28 0,16.15 V 1.5 C 1.34,0.5 3.18,0 5.5,0 7.83,0 9.66,0.5 11,1.5 12.34,0.5 14.17,0 16.5,0 Z"
+     id="path2045" />
+</svg>
