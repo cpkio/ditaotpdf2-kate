@@ -49,4 +49,17 @@
     <xsl:attribute-set name="chrow.chdesc__keycol-content" use-attribute-sets="common.table.body.entry common.table.head.entry"></xsl:attribute-set>
 
     <xsl:attribute-set name="chrow.chdesc__content" use-attribute-sets="common.table.body.entry"></xsl:attribute-set>
+
+    <!-- Этот набор атрибутов возможно будет использоваться для стилизации
+    блоков steptroubleshooting & tasktroubleshooting -->
+    <xsl:attribute-set name="troubleshooting" use-attribute-sets="common.block">
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="steptroubleshooting.title">
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="tasktroubleshooting.title">
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
+    </xsl:attribute-set>
 </xsl:stylesheet>

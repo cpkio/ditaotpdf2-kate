@@ -2,7 +2,15 @@
 <?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
 <plugin id="com.kate.pdf">
   <require plugin="org.dita.pdf2"/>
-  <transtype name="pdfkate" extends="pdf" desc="PDF restyling for KatyushaIT company"/>
+  <transtype name="pdfkate" extends="pdf" desc="PDF restyling for KatyushaIT company">
+        <param name="custom-headers-enabled"
+            desc="This option enables custom titles on stepxmp, steptroubleshooting and tasktroubleshooting elements"
+            type="enum">
+            <val default="yes">no</val>
+            <val>yes</val>
+        </param>
+  </transtype>
   <feature extension="dita.transtype.print" value="pdfkate"/>
   <feature extension="ant.import" file="integrator.xml"/>
+  <feature extension="dita.conductor.pdf2.param" file="pdf2ExtensionParameters.xml"/>
 </plugin>

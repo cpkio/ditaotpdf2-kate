@@ -17,11 +17,15 @@
     <xsl:template match="*[contains(@class, ' task/stepxmp ')]">
       <fo:block xsl:use-attribute-sets="stepxmp">
         <xsl:call-template name="commonattributes"/>
-          <fo:inline xsl:use-attribute-sets="stepxmp.title">
-          <xsl:call-template name="getVariable">
-            <xsl:with-param name="id" select="'Step Example'"/>
-          </xsl:call-template>
-          </fo:inline>
+        <xsl:choose>
+            <xsl:when test="$custom-headers-enabled = 'yes'">
+                <fo:inline xsl:use-attribute-sets="stepxmp.title">
+                <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Step Example'"/>
+                </xsl:call-template>
+                </fo:inline>
+            </xsl:when>
+        </xsl:choose>
         <xsl:apply-templates/>
       </fo:block>
     </xsl:template>
@@ -48,6 +52,18 @@
                                     </fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell xsl:use-attribute-sets="note__text__entry">
+                                    <xsl:choose>
+                                        <xsl:when test="$custom-headers-enabled = 'yes'">
+                                            <fo:block xsl:use-attribute-sets="troubleshooting">
+                                                <xsl:call-template name="commonattributes"/>
+                                                <fo:inline xsl:use-attribute-sets="steptroubleshooting.title">
+                                                <xsl:call-template name="getVariable">
+                                                    <xsl:with-param name="id" select="'Step Troubleshooting'"/>
+                                                </xsl:call-template>
+                                                </fo:inline>
+                                            </fo:block>
+                                        </xsl:when>
+                                    </xsl:choose>
                                     <xsl:apply-templates/>
                                 </fo:table-cell>
                         </fo:table-row>
@@ -64,6 +80,18 @@
                                     <fo:block/>
                                 </fo:table-cell>
                                 <fo:table-cell xsl:use-attribute-sets="note__text__entry">
+                                    <xsl:choose>
+                                        <xsl:when test="$custom-headers-enabled = 'yes'">
+                                            <fo:block xsl:use-attribute-sets="troubleshooting">
+                                                <xsl:call-template name="commonattributes"/>
+                                                <fo:inline xsl:use-attribute-sets="steptroubleshooting.title">
+                                                <xsl:call-template name="getVariable">
+                                                    <xsl:with-param name="id" select="'Step Troubleshooting'"/>
+                                                </xsl:call-template>
+                                                </fo:inline>
+                                            </fo:block>
+                                        </xsl:when>
+                                    </xsl:choose>
                                     <xsl:apply-templates/>
                                 </fo:table-cell>
                         </fo:table-row>
@@ -72,6 +100,8 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
+    <xsl:param name="custom-headers-enabled" select="'no'"/>
 
     <xsl:template match="*[contains(@class,' task/tasktroubleshooting ')]">
         <xsl:variable name="troubleTaskImagePath">
@@ -95,6 +125,18 @@
                                     </fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell xsl:use-attribute-sets="note__text__entry">
+                                    <xsl:choose>
+                                        <xsl:when test="$custom-headers-enabled = 'yes'">
+                                            <fo:block xsl:use-attribute-sets="troubleshooting">
+                                                <xsl:call-template name="commonattributes"/>
+                                                <fo:inline xsl:use-attribute-sets="tasktroubleshooting.title">
+                                                <xsl:call-template name="getVariable">
+                                                    <xsl:with-param name="id" select="'Task Troubleshooting'"/>
+                                                </xsl:call-template>
+                                                </fo:inline>
+                                            </fo:block>
+                                        </xsl:when>
+                                    </xsl:choose>
                                     <xsl:apply-templates/>
                                 </fo:table-cell>
                         </fo:table-row>
@@ -111,6 +153,18 @@
                                     <fo:block/>
                                 </fo:table-cell>
                                 <fo:table-cell xsl:use-attribute-sets="note__text__entry">
+                                    <xsl:choose>
+                                        <xsl:when test="$custom-headers-enabled = 'yes'">
+                                            <fo:block xsl:use-attribute-sets="troubleshooting">
+                                                <xsl:call-template name="commonattributes"/>
+                                                <fo:inline xsl:use-attribute-sets="tasktroubleshooting.title">
+                                                <xsl:call-template name="getVariable">
+                                                    <xsl:with-param name="id" select="'Task Troubleshooting'"/>
+                                                </xsl:call-template>
+                                                </fo:inline>
+                                            </fo:block>
+                                        </xsl:when>
+                                    </xsl:choose>
                                     <xsl:apply-templates/>
                                 </fo:table-cell>
                         </fo:table-row>

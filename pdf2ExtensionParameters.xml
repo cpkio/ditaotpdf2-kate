@@ -1,0 +1,6 @@
+<dummy>
+    <param
+        name="custom-headers-enabled"
+        expression="${custom-headers-enabled}"
+        if="custom-headers-enabled"/>
+</dummy>

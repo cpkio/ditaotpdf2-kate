@@ -130,4 +130,7 @@
 
   <variable id="#quote-start"><variable id="OpenQuote"/></variable>
   <variable id="#quote-end"><variable id="CloseQuote"/></variable>
+
+  <variable id="Step Troubleshooting">Ошибки при выполнении шага</variable>
+  <variable id="Task Troubleshooting">Ошибки при выполнении задачи</variable>
 </vars>
