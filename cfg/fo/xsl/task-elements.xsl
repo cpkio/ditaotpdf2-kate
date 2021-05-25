@@ -14,6 +14,12 @@
         <xsl:text>»</xsl:text>
     </xsl:template>
 
+    <xsl:template match="*[contains(@class, ' topic/title ')]/*[contains(@class, ' ui-d/uicontrol ')]">
+        <xsl:text>«</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>»</xsl:text>
+    </xsl:template>
+
     <xsl:template match="*[contains(@class, ' task/stepxmp ')]">
       <fo:block xsl:use-attribute-sets="stepxmp">
         <xsl:call-template name="commonattributes"/>

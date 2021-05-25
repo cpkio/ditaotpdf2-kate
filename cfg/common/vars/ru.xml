@@ -95,6 +95,10 @@
 
   <variable id="troubleshooting Image Path">Customization/OpenTopic/common/artwork/help-rhombus-outline.svg</variable>
   <variable id="troubleshooting Task Image Path">Customization/OpenTopic/common/artwork/help-rhombus.svg</variable>
+  <variable id="troubleshooting Task Image Path">Customization/OpenTopic/common/artwork/help-rhombus.svg</variable>
+  <variable id="troubleshooting Topic Condition Image Path">Customization/OpenTopic/common/artwork/help-circle-outline.svg</variable>
+  <variable id="troubleshooting Topic Cause Image Path">Customization/OpenTopic/common/artwork/information-outline.svg</variable>
+  <variable id="troubleshooting Topic Remedy Image Path">Customization/OpenTopic/common/artwork/check-circle-outline.svg</variable>
 
   <variable id="Child topics"><!--TODO:Child Topics--></variable>
 
