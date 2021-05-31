@@ -12,6 +12,9 @@
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__frontmatter__subtitle" use-attribute-sets="common.title">
+        <xsl:attribute name="space-before">80mm</xsl:attribute>
+        <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
+        <xsl:attribute name="font-size">12pt</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__frontmatter__owner" use-attribute-sets="common.title">
@@ -29,7 +32,7 @@
     <xsl:attribute-set name="__frontmatter__booklibrary">
         <xsl:attribute name="text-transform">uppercase</xsl:attribute>
         <xsl:attribute name="border-bottom">2pt solid black</xsl:attribute>
-        <xsl:attribute name="margin-bottom">1em</xsl:attribute>
+        <xsl:attribute name="margin-bottom">0.25em</xsl:attribute>
     </xsl:attribute-set>
 
   <!-- <xsl:attribute-set name="back-cover"> -->
