@@ -9,6 +9,8 @@
         <xsl:attribute name="font-size">smaller</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="keep-with-next.within-page">always</xsl:attribute>
+        <xsl:attribute name="margin-left">-12pt</xsl:attribute>
+        <!-- <xsl:attribute name="padding-left">-8pt</xsl:attribute> -->
     </xsl:attribute-set>
 
     <xsl:attribute-set name="stepxmp.title">
