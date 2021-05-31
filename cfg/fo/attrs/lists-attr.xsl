@@ -15,8 +15,7 @@
         <xsl:attribute name="space-before">0em</xsl:attribute>
         <xsl:attribute name="space-after">0em</xsl:attribute>
         <xsl:attribute name="provisional-distance-between-starts">3mm</xsl:attribute>
-        <xsl:attribute name="provisional-label-separation">1mm</xsl:attribute>
-<!--        <xsl:attribute name="margin-left">-8pt</xsl:attribute>-->
+        <xsl:attribute name="provisional-label-separation">2mm</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="ul.li">
@@ -36,6 +35,9 @@
 
     <xsl:attribute-set name="ul.li__body">
         <xsl:attribute name="start-indent">body-start()</xsl:attribute>
+        <!-- Этот отступ позволяет сместить тело списка вправо, чтобы в маркер
+        списка поместилось длинное тире (см. "Unordered List bullet" в ru.xml -->
+        <xsl:attribute name="margin-left">12pt</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="ul.li__content">
