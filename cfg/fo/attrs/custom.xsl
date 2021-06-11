@@ -4,7 +4,6 @@
     version="2.0">
 
     <xsl:import href="layout-masters-attr.xsl"/>
-    <xsl:import href="basic-settings.xsl"/>
     <xsl:import href="front-matter-attr.xsl"/>
     <xsl:import href="commons-attr.xsl"/>
     <xsl:import href="topic-attr.xsl"/>
@@ -12,7 +11,8 @@
     <xsl:import href="tables-attr.xsl"/>
     <xsl:import href="index-attr.xsl"/>
     <xsl:import href="lists-attr.xsl"/>
-    <xsl:import href="troubleshooting.xsl"/>
+    <xsl:import href="troubleshooting-attr.xsl"/>
+    <xsl:import href="static-content-attr.xsl"/>
 
     <xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
         <xsl:attribute name="font-family">sans-serif</xsl:attribute>

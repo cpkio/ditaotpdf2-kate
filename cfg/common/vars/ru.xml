@@ -2,26 +2,26 @@
 
 <vars xmlns="http://www.idiominc.com/opentopic/vars">
   <variable id="Product Name"/>
-  <variable id="Body odd footer"/>
-  <variable id="Body even footer"/>
+  <variable id="Body odd footer"><param ref-name="pagenum"/></variable>
+  <variable id="Body even footer"><param ref-name="pagenum"/></variable>
   <variable id="Body first footer"/>
   <variable id="Body first header"/>
-  <variable id="Body odd header"><param ref-name="prodname"/> | <param ref-name="heading"/> | <param ref-name="pagenum"/></variable>
-  <variable id="Body even header"><param ref-name="pagenum"/> | <param ref-name="heading"/> | <param ref-name="prodname"/></variable>
-  <variable id="Preface odd footer"/>
-  <variable id="Preface even footer"/>
+  <variable id="Body odd header"><param ref-name="prodname"/> | <param ref-name="heading"/></variable>
+  <variable id="Body even header"><param ref-name="heading"/> | <param ref-name="prodname"/></variable>
+  <variable id="Preface odd footer"><param ref-name="pagenum"/></variable>
+  <variable id="Preface even footer"><param ref-name="pagenum"/></variable>
   <variable id="Preface first footer"/>
-  <variable id="Preface odd header"><param ref-name="prodname"/> | <variable id="Preface title"/> | <param ref-name="pagenum"/></variable>
-  <variable id="Preface even header"><param ref-name="pagenum"/> | <variable id="Preface title"/> | <param ref-name="prodname"/></variable>
+  <variable id="Preface odd header"><param ref-name="prodname"/> | <variable id="Preface title"/></variable>
+  <variable id="Preface even header"><param ref-name="pagenum"/> | <variable id="Preface title"/></variable>
   <variable id="Preface first header"/>
-  <variable id="Toc odd footer"/>
-  <variable id="Toc even footer"/>
-  <variable id="Toc odd header"><param ref-name="prodname"/> | <param ref-name="heading"/> | <param ref-name="pagenum"/></variable>
-  <variable id="Toc even header"><param ref-name="pagenum"/> | <param ref-name="heading"/> | <param ref-name="prodname"/></variable>
-  <variable id="Index odd footer"/>
-  <variable id="Index even footer"/>
-  <variable id="Index odd header"><param ref-name="prodname"/> | <param ref-name="heading"/> | <param ref-name="pagenum"/></variable>
-  <variable id="Index even header"><param ref-name="pagenum"/> | <param ref-name="heading"/> | <param ref-name="prodname"/></variable>
+  <variable id="Toc odd footer"><param ref-name="pagenum"/></variable>
+  <variable id="Toc even footer"><param ref-name="pagenum"/></variable>
+  <variable id="Toc odd header"/>
+  <variable id="Toc even header"/>
+  <variable id="Index odd footer"><param ref-name="pagenum"/></variable>
+  <variable id="Index even footer"><param ref-name="pagenum"/></variable>
+  <variable id="Index odd header"><param ref-name="prodname"/> | <param ref-name="heading"/></variable>
+  <variable id="Index even header"><param ref-name="heading"/> | <param ref-name="prodname"/></variable>
   <variable id="Ordered List Number"><param ref-name="number"/>. </variable>
   <variable id="Ordered List Number 1"><param ref-name="number"/>. </variable>
   <variable id="Ordered List Number 2"><param ref-name="number"/>. </variable>
@@ -123,10 +123,10 @@
   <variable id="Step Example">Пример: </variable>
   <variable id="Substep Number"><param ref-name="number"/>) </variable>
   <variable id="Substep Format">а</variable>
-  <variable id="Glossary odd footer"/>
-  <variable id="Glossary even footer"/>
-  <variable id="Glossary odd header"><param ref-name="prodname"/> | <param ref-name="heading"/> | <param ref-name="pagenum"/></variable>
-  <variable id="Glossary even header"><param ref-name="pagenum"/> | <param ref-name="heading"/> | <param ref-name="prodname"/></variable>
+  <variable id="Glossary odd footer"><param ref-name="pagenum"/></variable>
+  <variable id="Glossary even footer"><param ref-name="pagenum"/></variable>
+  <variable id="Glossary odd header"><param ref-name="prodname"/> | <param ref-name="heading"/></variable>
+  <variable id="Glossary even header"><param ref-name="heading"/> | <param ref-name="prodname"/></variable>
   <variable id="Glossary">Список терминов</variable>
   <variable id="List of Tables">Список таблиц</variable>
   <variable id="List of Figures">Список иллюстраций</variable>
