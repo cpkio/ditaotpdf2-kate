@@ -24,13 +24,13 @@
   <variable id="Index even header"><param ref-name="heading"/> | <param ref-name="prodname"/></variable>
   <variable id="Ordered List Number"><param ref-name="number"/>. </variable>
   <variable id="Ordered List Number 1"><param ref-name="number"/>. </variable>
-  <variable id="Ordered List Number 2"><param ref-name="number"/>. </variable>
+  <variable id="Ordered List Number 2"><param ref-name="number"/>) </variable>
   <variable id="Ordered List Number 3"><param ref-name="number"/>. </variable>
   <variable id="Ordered List Number 4"><param ref-name="number"/>. </variable>
   <variable id="Ordered List Format 1">1</variable>
-  <variable id="Ordered List Format 2">a</variable>
+  <variable id="Ordered List Format 2">а</variable>
   <variable id="Ordered List Format 3">1</variable>
-  <variable id="Ordered List Format 4">a</variable>
+  <variable id="Ordered List Format 4">а</variable>
 
   <variable id="Unordered List bullet">—</variable>
   <variable id="Unordered List bullet 1">‣</variable>
@@ -108,8 +108,8 @@
 
   <!-- Deprecated since 2.3 -->
   <variable id="Index multiple entries separator">, </variable>
-  <variable id="Optional Step">Необязательно:</variable>
-  <variable id="Required Step">Обязательно:</variable>
+  <variable id="Optional Step">(Необязательно)</variable>
+  <variable id="Required Step">(Обязательно)</variable>
   <!-- Task strings now reused from common -->
   <variable id="Task Prereq"></variable>
   <variable id="Task Context"></variable>

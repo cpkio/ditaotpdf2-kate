@@ -108,10 +108,38 @@ See the accompanying LICENSE file for applicable license.
         <xsl:attribute name="baseline-shift">-12%</xsl:attribute>
         <xsl:attribute name="padding-left">2pt</xsl:attribute>
         <xsl:attribute name="padding-right">3pt</xsl:attribute>
+        <xsl:attribute name="line-height">100%</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="image__block">
         <xsl:attribute name="margin-top">6pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="fn">
+        <xsl:attribute name="font-size">8pt</xsl:attribute>
+        <xsl:attribute name="color">purple</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="fn__id">
+        <xsl:attribute name="font-style">italic</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="fn__callout">
+        <xsl:attribute name="keep-with-previous.within-line">always</xsl:attribute>
+        <xsl:attribute name="baseline-shift">25%</xsl:attribute>
+        <xsl:attribute name="line-height">-30%</xsl:attribute>
+        <xsl:attribute name="font-size">75%</xsl:attribute>
+        <xsl:attribute name="padding-left">2pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="fn__body" use-attribute-sets="base-font">
+        <xsl:attribute name="provisional-distance-between-starts">8mm</xsl:attribute>
+        <xsl:attribute name="provisional-label-separation">2mm</xsl:attribute>
+        <xsl:attribute name="line-height">1.2</xsl:attribute>
+        <xsl:attribute name="start-indent">0pt</xsl:attribute>
+        <xsl:attribute name="font-weight">normal</xsl:attribute>
+        <xsl:attribute name="font-style">normal</xsl:attribute>
+        <xsl:attribute name="text-decoration">no-underline no-overline</xsl:attribute>
     </xsl:attribute-set>
 
 </xsl:stylesheet>
