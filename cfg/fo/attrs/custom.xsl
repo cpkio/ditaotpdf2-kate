@@ -13,6 +13,7 @@
     <xsl:import href="lists-attr.xsl"/>
     <xsl:import href="troubleshooting-attr.xsl"/>
     <xsl:import href="static-content-attr.xsl"/>
+    <xsl:import href="links-attr.xsl"/>
 
     <xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
         <xsl:attribute name="font-family">sans-serif</xsl:attribute>
