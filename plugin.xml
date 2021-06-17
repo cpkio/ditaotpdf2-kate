@@ -4,7 +4,20 @@
   <require plugin="org.dita.pdf2"/>
   <transtype name="pdfkate" extends="pdf" desc="PDF restyling for KatyushaIT company">
         <param name="custom-headers-enabled"
-            desc="This option enables custom titles on stepxmp, steptroubleshooting and tasktroubleshooting elements"
+            desc="Этот параметр включает дополнительные заголовки к элементам
+            stepxmp, steptroubleshooting, tasktroubleshooting"
+            type="enum">
+            <val default="yes">no</val>
+            <val>yes</val>
+        </param>
+        <param name="note-labels-enabled"
+            desc="Этот параметр включает дополнительные текстовые подписи к примечаниям различного вида"
+            type="enum">
+            <val default="yes">no</val>
+            <val>yes</val>
+        </param>
+        <param name="force-page-count"
+            desc="Этот параметр позволяет управлять вставкой дополнительных пустых страниц"
             type="enum">
             <val default="yes">no</val>
             <val>yes</val>

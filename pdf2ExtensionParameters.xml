@@ -3,4 +3,12 @@
         name="custom-headers-enabled"
         expression="${custom-headers-enabled}"
         if="custom-headers-enabled"/>
+    <param
+        name="note-labels-enabled"
+        expression="${note-labels-enabled}"
+        if="note-labels-enabled"/>
+    <param
+        name="force-page-count"
+        expression="${force-page-count}"
+        if="force-page-count"/>
 </dummy>

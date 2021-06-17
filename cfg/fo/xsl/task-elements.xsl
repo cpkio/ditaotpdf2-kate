@@ -20,6 +20,14 @@
         <xsl:text>»</xsl:text>
     </xsl:template>
 
+    <!-- Этот параметр позволяет показывать подзаголовки в блоках:
+        — stepxmp
+        — steptroubleshooting
+        - tasktroubleshooting
+
+        Этот параметр никак не затрагивает топик troubleshooting -->
+    <xsl:param name="custom-headers-enabled" select="'no'"/>
+
     <xsl:template match="*[contains(@class, ' task/stepxmp ')]">
       <fo:block xsl:use-attribute-sets="stepxmp">
         <xsl:call-template name="commonattributes"/>
@@ -107,8 +115,6 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:param name="custom-headers-enabled" select="'no'"/>
-
     <xsl:template match="*[contains(@class,' task/tasktroubleshooting ')]">
         <xsl:variable name="troubleTaskImagePath">
             <xsl:call-template name="getVariable">
@@ -142,6 +148,7 @@
                                                 </fo:inline>
                                             </fo:block>
                                         </xsl:when>
+                                        <xsl:otherwise/>
                                     </xsl:choose>
                                     <xsl:apply-templates/>
                                 </fo:table-cell>

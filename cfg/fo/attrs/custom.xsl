@@ -16,8 +16,4 @@
     <xsl:import href="static-content-attr.xsl"/>
     <xsl:import href="links-attr.xsl"/>
 
-    <xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
-        <xsl:attribute name="font-family">sans-serif</xsl:attribute>
-    </xsl:attribute-set>
-
 </xsl:stylesheet>
