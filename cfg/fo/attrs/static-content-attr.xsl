@@ -9,11 +9,11 @@
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__base_headers">
-        <xsl:attribute name="space-before" select="$page-margin-outside"/>
+        <xsl:attribute name="space-before">10mm</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__base_footers">
-        <xsl:attribute name="space-after" select="$page-margin-outside"/>
+        <xsl:attribute name="space-after">10mm</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__base_left">
