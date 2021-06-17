@@ -64,6 +64,10 @@ See the accompanying LICENSE file for applicable license.
         <xsl:attribute name="text-align">right</xsl:attribute>
     </xsl:attribute-set>
 
+    <xsl:attribute-set name="note__text__entry">
+        <xsl:attribute name="padding-right">12pt</xsl:attribute>
+    </xsl:attribute-set>
+
     <xsl:attribute-set name="note__label__note">
     </xsl:attribute-set>
 

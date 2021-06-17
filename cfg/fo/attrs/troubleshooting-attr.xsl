@@ -9,6 +9,7 @@
         <xsl:attribute name="margin-bottom">0.6em</xsl:attribute>
         <xsl:attribute name="padding-top">0.6em</xsl:attribute>
         <xsl:attribute name="padding-bottom">0.6em</xsl:attribute>
+        <xsl:attribute name="border">1pt solid silver</xsl:attribute>
         <xsl:attribute name="keep-with-previous.within-column">always</xsl:attribute>
     </xsl:attribute-set>
 
