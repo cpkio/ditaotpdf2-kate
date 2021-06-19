@@ -9,6 +9,20 @@
         <xsl:attribute name="keep-with-previous.within-page">always</xsl:attribute>
     </xsl:attribute-set>
 
+    <xsl:attribute-set name="figgroup">
+        <xsl:attribute name="border-start-width">0pt</xsl:attribute>
+        <xsl:attribute name="border-start-width">0pt</xsl:attribute>
+        <xsl:attribute name="text-align">center</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="fig.title" use-attribute-sets="base-font common.title">
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
+        <xsl:attribute name="space-before">5pt</xsl:attribute>
+        <xsl:attribute name="space-after">10pt</xsl:attribute>
+        <xsl:attribute name="keep-with-previous.within-page">always</xsl:attribute>
+        <xsl:attribute name="text-align">center</xsl:attribute>
+    </xsl:attribute-set>
+
     <xsl:attribute-set name="section.title" use-attribute-sets="common.title">
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="space-before">15pt</xsl:attribute>
