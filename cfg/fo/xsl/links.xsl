@@ -61,7 +61,7 @@
         </fo:basic-link>
 
         <xsl:choose>
-            <xsl:when test="@type = 'fig' and not(@scope = 'external' or not(empty(@format) or @format = 'dita')) and exists($referenceTitle) and not($element[contains(@class, ' topic/fn ')])">
+            <xsl:when test="@type = 'fig' or @type='step' or @type='table' and not(@scope = 'external' or not(empty(@format) or @format = 'dita')) and exists($referenceTitle) and not($element[contains(@class, ' topic/fn ')])">
                 <xsl:call-template name="insertPageNumberCitation">
                     <xsl:with-param name="destination" select="$destination"/>
                     <xsl:with-param name="element" select="$element"/>
@@ -74,13 +74,6 @@
                     <xsl:with-param name="destination" select="$destination"/>
                     <xsl:with-param name="element" select="$element"/>
                     <xsl:with-param name="isTitleEmpty" select="true()"/>
-                </xsl:call-template>
-            </xsl:when>
-            <xsl:when test="@type = 'step' and not(@scope = 'external' or not(empty(@format) or @format = 'dita')) and exists($referenceTitle) and not($element[contains(@class, ' topic/fn ')])">
-                <xsl:call-template name="insertPageNumberCitation">
-                    <xsl:with-param name="destination" select="$destination"/>
-                    <xsl:with-param name="element" select="$element"/>
-                    <xsl:with-param name="noNumber" select="true()"/>
                 </xsl:call-template>
             </xsl:when>
             <xsl:when test="@type = 'topic' and not(@scope = 'external' or not(empty(@format) or @format = 'dita')) and exists($referenceTitle) and not($element[contains(@class, ' topic/fn ')])">
