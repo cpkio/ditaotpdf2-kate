@@ -2,6 +2,7 @@
 <?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
 <plugin id="com.kate.pdf">
   <require plugin="org.dita.pdf2"/>
+  <require plugin="org.dita.pdf2.fop"/>
   <transtype name="pdfkate" extends="pdf" desc="PDF restyling for KatyushaIT company">
         <param name="custom-headers-enabled"
             desc="Этот параметр включает дополнительные заголовки к элементам
