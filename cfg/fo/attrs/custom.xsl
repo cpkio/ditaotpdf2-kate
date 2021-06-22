@@ -15,5 +15,6 @@
     <xsl:import href="troubleshooting-attr.xsl"/>
     <xsl:import href="static-content-attr.xsl"/>
     <xsl:import href="links-attr.xsl"/>
+    <xsl:import href="toc-attr.xsl"/>
 
 </xsl:stylesheet>
