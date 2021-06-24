@@ -40,7 +40,7 @@
     <xsl:attribute-set name="__toc__indent">
         <xsl:attribute name="start-indent">
             <xsl:variable name="level" select="count(ancestor-or-self::*[contains(@class, ' topic/topic ')])"/>
-            <xsl:value-of select="concat($toc.toc-indent, ' + (', string($level - 1), ' * ', $toc.text-indent, ')')"/>
+            <xsl:value-of select="concat(string($level - 1), ' * ', $toc.toc-indent)"/>
         </xsl:attribute>
     </xsl:attribute-set>
 
@@ -52,6 +52,11 @@
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__toc__table__contentcell">
+        <xsl:attribute name="padding-left"><xsl:value-of select="$toc.text-indent"/></xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__toc__gloss__index__spacing">
+        <xsl:attribute name="margin-top"><xsl:value-of select="$default-font-size"/></xsl:attribute>
     </xsl:attribute-set>
 
 </xsl:stylesheet>

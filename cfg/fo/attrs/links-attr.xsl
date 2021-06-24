@@ -21,6 +21,7 @@
     </xsl:attribute-set>
 
     <xsl:attribute-set name="related-links">
+        <xsl:attribute name="space-before">10pt</xsl:attribute>
         <xsl:attribute name="space-after">10pt</xsl:attribute>
     </xsl:attribute-set>
 

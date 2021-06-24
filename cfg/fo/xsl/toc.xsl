@@ -221,4 +221,110 @@
         </xsl:for-each>
     </xsl:template>
 
+    <xsl:template match="ot-placeholder:indexlist" mode="toc" name="toc.index">
+        <xsl:if test="(//opentopic-index:index.groups//opentopic-index:index.entry) and (exists($index-entries//opentopic-index:index.entry))">
+                    <fo:table>
+                        <fo:table-column column-number="1" xsl:use-attribute-sets="__toc__table__prefixcolumn"/>
+                        <fo:table-column column-number="2"/>
+                        <fo:table-body>
+                            <fo:table-row>
+                                <fo:table-cell xsl:use-attribute-sets="__toc__table__prefixcell">
+                                    <fo:block/>
+                                </fo:table-cell>
+
+                                <fo:table-cell xsl:use-attribute-sets="__toc__table__contentcell">
+        <fo:block xsl:use-attribute-sets="__toc__gloss__index__spacing">
+            <fo:block xsl:use-attribute-sets="__toc__topic__content__booklist">
+            <fo:basic-link internal-destination="{$id.index}" xsl:use-attribute-sets="__toc__link">
+                <fo:inline xsl:use-attribute-sets="__toc__title">
+                <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Index'"/>
+                </xsl:call-template>
+                </fo:inline>
+                <fo:inline xsl:use-attribute-sets="__toc__page-number">
+                <fo:leader xsl:use-attribute-sets="__toc__leader"/>
+                <fo:page-number-citation ref-id="{$id.index}"/>
+                </fo:inline>
+            </fo:basic-link>
+            </fo:block>
+        </fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="ot-placeholder:glossarylist" mode="toc">
+                    <fo:table>
+                        <fo:table-column column-number="1" xsl:use-attribute-sets="__toc__table__prefixcolumn"/>
+                        <fo:table-column column-number="2"/>
+                        <fo:table-body>
+                            <fo:table-row>
+                                <fo:table-cell xsl:use-attribute-sets="__toc__table__prefixcell">
+                                    <fo:block/>
+                                </fo:table-cell>
+
+                                <fo:table-cell xsl:use-attribute-sets="__toc__table__contentcell">
+        <fo:block xsl:use-attribute-sets="__toc__gloss__index__spacing">
+            <fo:block xsl:use-attribute-sets="__toc__topic__content__glossary">
+                <fo:basic-link internal-destination="{$id.glossary}" xsl:use-attribute-sets="__toc__link">
+                    <fo:inline xsl:use-attribute-sets="__toc__title">
+                        <xsl:call-template name="getVariable">
+                            <xsl:with-param name="id" select="'Glossary'"/>
+                        </xsl:call-template>
+                    </fo:inline>
+                    <fo:inline xsl:use-attribute-sets="__toc__page-number">
+                        <fo:leader xsl:use-attribute-sets="__toc__leader"/>
+                        <fo:page-number-citation ref-id="{$id.glossary}"/>
+                    </fo:inline>
+                </fo:basic-link>
+            </fo:block>
+        </fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+    </xsl:template>
+
+    <xsl:template match="ot-placeholder:tablelist" mode="toc">
+        <xsl:if test="//*[contains(@class, ' topic/table ')]/*[contains(@class, ' topic/title ' )]">
+            <fo:block xsl:use-attribute-sets="__toc__indent__lot">
+                <fo:block xsl:use-attribute-sets="__toc__topic__content__lot">
+                    <fo:basic-link internal-destination="{$id.lot}" xsl:use-attribute-sets="__toc__link">
+                        <fo:inline xsl:use-attribute-sets="__toc__title">
+                            <xsl:call-template name="getVariable">
+                                <xsl:with-param name="id" select="'List of Tables'"/>
+                            </xsl:call-template>
+                        </fo:inline>
+                        <fo:inline xsl:use-attribute-sets="__toc__page-number">
+                            <fo:leader xsl:use-attribute-sets="__toc__leader"/>
+                            <fo:page-number-citation ref-id="{$id.lot}"/>
+                        </fo:inline>
+                    </fo:basic-link>
+                </fo:block>
+            </fo:block>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="ot-placeholder:figurelist" mode="toc">
+        <xsl:if test="//*[contains(@class, ' topic/fig ')]/*[contains(@class, ' topic/title ' )]">
+            <fo:block xsl:use-attribute-sets="__toc__indent__lof">
+                <fo:block xsl:use-attribute-sets="__toc__topic__content__lof">
+                    <fo:basic-link internal-destination="{$id.lof}" xsl:use-attribute-sets="__toc__link">
+                        <fo:inline xsl:use-attribute-sets="__toc__title">
+                            <xsl:call-template name="getVariable">
+                                <xsl:with-param name="id" select="'List of Figures'"/>
+                            </xsl:call-template>
+                        </fo:inline>
+                        <fo:inline xsl:use-attribute-sets="__toc__page-number">
+                            <fo:leader xsl:use-attribute-sets="__toc__leader"/>
+                            <fo:page-number-citation ref-id="{$id.lof}"/>
+                        </fo:inline>
+                    </fo:basic-link>
+                </fo:block>
+            </fo:block>
+        </xsl:if>
+    </xsl:template>
+
 </xsl:stylesheet>
