@@ -13,6 +13,10 @@
         <!-- <xsl:attribute name="padding-left">-8pt</xsl:attribute> -->
     </xsl:attribute-set>
 
+    <xsl:attribute-set name="stepxmp">
+        <xsl:attribute name="margin-left">12pt</xsl:attribute>
+    </xsl:attribute-set>
+
     <xsl:attribute-set name="stepxmp.title">
         <xsl:attribute name="font-weight">bold</xsl:attribute>
     </xsl:attribute-set>

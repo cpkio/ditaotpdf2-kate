@@ -2,6 +2,13 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="2.0">
 
+  <xsl:attribute-set name="__table_common">
+    <xsl:attribute name="space-before">8pt</xsl:attribute>
+    <xsl:attribute name="space-after">12pt</xsl:attribute>
+    <xsl:attribute name="border-separation">2pt</xsl:attribute>
+    <xsl:attribute name="border-collapse">separate</xsl:attribute>
+  </xsl:attribute-set>
+
   <xsl:attribute-set name="__table_header_entry">
     <xsl:attribute name="background-color">#FAFAFA</xsl:attribute>
     <xsl:attribute name="border-bottom">2pt solid #CCCCCC</xsl:attribute>
@@ -13,25 +20,17 @@
     <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="table" use-attribute-sets="base-font">
-    <!--It is a table container -->
-    <xsl:attribute name="space-before">8pt</xsl:attribute>
-    <xsl:attribute name="space-after">12pt</xsl:attribute>
+  <xsl:attribute-set name="table" use-attribute-sets="base-font __table_common">
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="thead.row" use-attribute-sets="__table_header_entry">
+  <xsl:attribute-set name="thead.row">
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="thead.row.entry">
+  <xsl:attribute-set name="thead.row.entry" use-attribute-sets="__table_header_entry">
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="simpletable" use-attribute-sets="base-font">
-    <!--It is a table container -->
+  <xsl:attribute-set name="simpletable" use-attribute-sets="base-font __table_common">
     <xsl:attribute name="width">100%</xsl:attribute>
-    <xsl:attribute name="space-before">8pt</xsl:attribute>
-    <xsl:attribute name="space-after">12pt</xsl:attribute>
-    <xsl:attribute name="border-separation">2pt</xsl:attribute>
-    <xsl:attribute name="border-collapse">separate</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="simpletable__body">
