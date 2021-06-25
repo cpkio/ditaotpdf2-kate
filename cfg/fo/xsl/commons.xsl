@@ -36,7 +36,7 @@
                             </xsl:if>
                         </fo:block>
                     </fo:table-cell>
-                    <fo:table-cell xsl:use-attribute-sets="__toc__mini__summary">
+                    <fo:table-cell>
                         <!--Really, it would be better to just apply-templates, but the attribute sets for shortdesc, body
                         and abstract might indent the text.  Here, the topic body is in a table cell, and should
                         not be indented, so each element is handled specially.-->
