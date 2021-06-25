@@ -5,6 +5,8 @@
                 version="2.0"
                 exclude-result-prefixes="xs">
 
+  <xsl:param name="tocMaximumLevel" select="6"/>
+
   <!-- This is the default, but you can set the margins individually below. -->
   <xsl:variable name="page-margins">20mm</xsl:variable>
 

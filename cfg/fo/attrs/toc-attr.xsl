@@ -59,4 +59,19 @@
         <xsl:attribute name="margin-top"><xsl:value-of select="$default-font-size"/></xsl:attribute>
     </xsl:attribute-set>
 
+    <xsl:attribute-set name="__toc__mini">
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
+        <xsl:attribute name="margin-right">20pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__toc__mini__header">
+        <xsl:attribute name="space-after">6pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__toc__mini__list__blocks">
+        <!-- <xsl:attribute name="space-after">3pt</xsl:attribute> -->
+        <xsl:attribute name="space-before">4pt</xsl:attribute>
+        <xsl:attribute name="margin-left">10pt</xsl:attribute>
+    </xsl:attribute-set>
+
 </xsl:stylesheet>
