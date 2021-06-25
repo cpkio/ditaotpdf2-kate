@@ -12,6 +12,10 @@
     exclude-result-prefixes="dita-ot ot-placeholder opentopic opentopic-index opentopic-func dita2xslfo xs"
     version="2.0">
 
+    <xsl:template match="*[contains(@class, ' bookmap/appendix ')]" mode="topicTitleNumber">
+        <xsl:number format="А" count="*[contains(@class, ' bookmap/appendix ')]"/>
+    </xsl:template>
+
     <xsl:template match="*" mode="createMiniToc">
         <fo:table xsl:use-attribute-sets="__toc__mini__table">
             <fo:table-column xsl:use-attribute-sets="__toc__mini__table__column_1"/>
