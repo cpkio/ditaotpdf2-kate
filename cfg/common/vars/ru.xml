@@ -33,10 +33,10 @@
   <variable id="Ordered List Format 4">а</variable>
 
   <variable id="Unordered List bullet">—</variable>
-  <variable id="Unordered List bullet 1">‣</variable>
-  <variable id="Unordered List bullet 2">⁃</variable>
-  <variable id="Unordered List bullet 3">•</variable>
-  <variable id="Unordered List bullet 4">•</variable>
+  <variable id="Unordered List bullet 1">—</variable>
+  <variable id="Unordered List bullet 2">•</variable>
+  <variable id="Unordered List bullet 3">‣</variable>
+  <variable id="Unordered List bullet 4">▪</variable>
 
   <variable id="Table of Contents">Содержание</variable>
 

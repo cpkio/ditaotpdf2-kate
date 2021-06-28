@@ -37,7 +37,7 @@
         <xsl:attribute name="start-indent">body-start()</xsl:attribute>
         <!-- Этот отступ позволяет сместить тело списка вправо, чтобы в маркер
         списка поместилось длинное тире (см. "Unordered List bullet" в ru.xml -->
-        <xsl:attribute name="margin-left">12pt</xsl:attribute>
+        <xsl:attribute name="margin-left">14pt</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="ul.li__content">
