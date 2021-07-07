@@ -14,6 +14,7 @@
     </xsl:attribute-set>
 
     <xsl:attribute-set name="stepxmp">
+        <xsl:attribute name="space-before">6pt</xsl:attribute>
         <xsl:attribute name="margin-left">12pt</xsl:attribute>
     </xsl:attribute-set>
 

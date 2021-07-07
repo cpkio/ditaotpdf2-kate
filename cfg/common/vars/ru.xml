@@ -90,7 +90,7 @@
   <variable id="important Note Image Path">Customization/OpenTopic/common/artwork/exclamation-thick.svg</variable>
   <variable id="remember Note Image Path"></variable>
   <variable id="restriction Note Image Path"></variable>
-  <variable id="tip Note Image Path"></variable>
+  <variable id="tip Note Image Path">Customization/OpenTopic/common/artwork/clippy.svg</variable>
   <variable id="other Note Image Path"></variable>
 
   <variable id="troubleshooting Image Path">Customization/OpenTopic/common/artwork/help-rhombus-outline.svg</variable>
