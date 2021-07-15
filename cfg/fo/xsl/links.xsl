@@ -69,7 +69,7 @@
                     <xsl:with-param name="noNumber" select="true()"/>
                 </xsl:call-template>
             </xsl:when>
-            <xsl:when test="@type = 'task' or @type = 'reference' and not(@scope = 'external' or not(empty(@format) or @format = 'dita')) and exists($referenceTitle) and not($element[contains(@class, ' topic/fn ')])">
+            <xsl:when test="@type = 'task' or @type = 'reference' or @type='concept' and not(@scope = 'external' or not(empty(@format) or @format = 'dita')) and exists($referenceTitle) and not($element[contains(@class, ' topic/fn ')])">
                 <xsl:call-template name="insertPageNumberCitation">
                     <xsl:with-param name="destination" select="$destination"/>
                     <xsl:with-param name="element" select="$element"/>

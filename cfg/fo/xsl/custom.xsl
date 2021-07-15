@@ -11,5 +11,6 @@
     <xsl:import href="links.xsl"/>
     <xsl:import href="troubleshooting.xsl"/>
     <xsl:import href="toc.xsl"/>
+    <xsl:import href="ui-domain-attr.xsl"/>
 
 </xsl:stylesheet>
