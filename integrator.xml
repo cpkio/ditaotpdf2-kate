@@ -3,6 +3,6 @@
   <target name="dita2pdfkate" depends="dita2pdfkate.init, dita2pdf2" />
   <target name="dita2pdfkate.init">
     <property name="customization.dir" location="${dita.plugin.com.kate.pdf.dir}/cfg" />
-    <property name="args.fo.userconfig" value="${dita.plugin.com.kate.pdf.dir}/fop.conf"/>
+    <property name="args.fo.userconfig" value="${dita.plugin.com.kate.pdf.dir}/cfg/fo/fop.conf"/>
   </target>
 </project>
